@@ -58,7 +58,7 @@ namespace PlutoRoverUnitTest
         {
             PlutoRoverAPI.Core rover = new PlutoRoverAPI.Core();
 
-            rover.Move("BBB");
+            rover.Move("FFLF");
 
             Assert.AreEqual("99, 2, W", rover.GetPosition());
         }

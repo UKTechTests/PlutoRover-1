@@ -47,6 +47,7 @@ namespace PlutoRoverAPI
 
         private void ProcessCommand(Char singleCommand)
         {
+
             switch (singleCommand)
             {
                 case 'F':
@@ -118,6 +119,19 @@ namespace PlutoRoverAPI
                         break;
                     }
             }
+
+            if (_roverX >= _maxX)
+                _roverX = 0;
+
+            if (_roverX < 0)
+                _roverX = _maxX - 1;
+
+            if (_roverY >= _maxY)
+                _roverY = 0;
+
+            if (_roverY < 0)
+                _roverY = _maxY - 1;
+
         }
 
         public string GetPosition()
