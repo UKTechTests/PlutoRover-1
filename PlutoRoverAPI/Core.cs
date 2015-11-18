@@ -83,12 +83,46 @@ namespace PlutoRoverAPI
 
                         break;
                     }
+                case 'R':
+                    {
+
+                        if (_roverDirection == DirectionEnum.N)
+                            _roverDirection = DirectionEnum.E;
+
+                        else if (_roverDirection == DirectionEnum.S)
+                            _roverDirection = DirectionEnum.W;
+
+                        else if (_roverDirection == DirectionEnum.E)
+                            _roverDirection = DirectionEnum.S;
+
+                        else if (_roverDirection == DirectionEnum.W)
+                            _roverDirection = DirectionEnum.N;
+
+                        break;
+                    }
+                case 'L':
+                    {
+
+                        if (_roverDirection == DirectionEnum.N)
+                            _roverDirection = DirectionEnum.W;
+
+                        else if (_roverDirection == DirectionEnum.S)
+                            _roverDirection = DirectionEnum.E;
+
+                        else if (_roverDirection == DirectionEnum.E)
+                            _roverDirection = DirectionEnum.N;
+
+                        else if (_roverDirection == DirectionEnum.W)
+                            _roverDirection = DirectionEnum.S;
+
+                        break;
+                    }
             }
         }
 
         public string GetPosition()
         {
-            
+
             return string.Format("{0}, {1}, {2}",
                                  _roverX,
                                  _roverY,
