@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlutoRoverClient", "PlutoRoverClient\PlutoRoverClient.csproj", "{BAEA39CF-5AC4-4A47-A9A4-C12EB3319EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlutoRoverAPI", "PlutoRoverAPI\PlutoRoverAPI.csproj", "{B3AB4564-FBDD-4A6C-8984-42B681149E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlutoRoverUnitTest", "PlutoRoverUnitTest\PlutoRoverUnitTest.csproj", "{60218E7F-079D-46FB-936E-070F196AFFB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAEA39CF-5AC4-4A47-A9A4-C12EB3319EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAEA39CF-5AC4-4A47-A9A4-C12EB3319EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAEA39CF-5AC4-4A47-A9A4-C12EB3319EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAEA39CF-5AC4-4A47-A9A4-C12EB3319EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AB4564-FBDD-4A6C-8984-42B681149E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AB4564-FBDD-4A6C-8984-42B681149E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AB4564-FBDD-4A6C-8984-42B681149E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AB4564-FBDD-4A6C-8984-42B681149E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60218E7F-079D-46FB-936E-070F196AFFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60218E7F-079D-46FB-936E-070F196AFFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60218E7F-079D-46FB-936E-070F196AFFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60218E7F-079D-46FB-936E-070F196AFFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
