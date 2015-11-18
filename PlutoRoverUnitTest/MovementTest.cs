@@ -14,7 +14,9 @@ namespace PlutoRoverUnitTest
         {
             PlutoRoverAPI.Core rover = new PlutoRoverAPI.Core();
 
-            rover.Move("FF");
+            String result = rover.Move("FF");
+
+            Assert.AreEqual("OK", result);
 
             Assert.AreEqual("0, 2, N", rover.GetPosition());
         }
@@ -24,7 +26,9 @@ namespace PlutoRoverUnitTest
         {
             PlutoRoverAPI.Core rover = new PlutoRoverAPI.Core();
 
-            rover.Move("FFRFF");
+            String result = rover.Move("FFRFF");
+
+            Assert.AreEqual("OK", result);
 
             Assert.AreEqual("2, 2, E", rover.GetPosition());
         }
@@ -34,7 +38,9 @@ namespace PlutoRoverUnitTest
         {
             PlutoRoverAPI.Core rover = new PlutoRoverAPI.Core();
 
-            rover.Move("FFFBB");
+            String result = rover.Move("FFFBB");
+
+            Assert.AreEqual("OK", result);
 
             Assert.AreEqual("0, 1, N", rover.GetPosition());
         }
@@ -48,7 +54,9 @@ namespace PlutoRoverUnitTest
         {
             PlutoRoverAPI.Core rover = new PlutoRoverAPI.Core();
 
-            rover.Move("BBB");
+            String result = rover.Move("BBB");
+
+            Assert.AreEqual("OK", result);
 
             Assert.AreEqual("0, 97, N", rover.GetPosition());
         }
@@ -58,12 +66,29 @@ namespace PlutoRoverUnitTest
         {
             PlutoRoverAPI.Core rover = new PlutoRoverAPI.Core();
 
-            rover.Move("FFLF");
+            String result = rover.Move("FFLF");
+
+            Assert.AreEqual("OK", result);
 
             Assert.AreEqual("99, 2, W", rover.GetPosition());
         }
 
         #endregion
 
+        #region Obstacles
+
+        [TestMethod]
+        public void TestMoveAndReportObstacle()
+        {
+            PlutoRoverAPI.Core rover = new PlutoRoverAPI.Core();
+
+            String result = rover.Move("FRFF");
+
+            Assert.AreEqual("Obstacle at 2, 1", result);
+
+            Assert.AreEqual("1, 1, E", rover.GetPosition());
+        }
+
+        #endregion
     }
 }
