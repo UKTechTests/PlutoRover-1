@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlutoRoverClient
 {
-    public partial class Form1 : Form
+    public partial class client : Form
     {
-        public Form1()
+        public client()
         {
             InitializeComponent();
         }

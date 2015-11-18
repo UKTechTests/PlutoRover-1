@@ -1,6 +1,6 @@
 ﻿namespace PlutoRoverClient
 {
-    partial class Form1
+    partial class client
     {
         /// <summary>
         /// Required designer variable.
